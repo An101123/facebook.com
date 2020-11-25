@@ -1,0 +1,409 @@
+.content {
+    height: 100%;
+    background-color: #f0f2f5;
+    padding: 80px 0 0 0;
+}
+
+.content>.row {
+    height: 100%;
+}
+
+.navbar-left {
+    width: 100%;
+    padding: 0 0 0 10px;
+}
+
+.navbar-left h5 {
+    padding: 10px 0 0 12px;
+}
+
+.navbar-item {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 0 13px;
+}
+
+.dropdown {
+    display: flex;
+}
+
+.dropdown span {
+    padding: 5px 0 0 0;
+}
+
+.shortcuts {
+    color: #8b8d90;
+    font-size: large;
+    font-weight: 500;
+    margin: 10px 0 0 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.edit-link {
+    overflow: hidden;
+    font-size: medium;
+    font-weight: 400;
+}
+
+.edit-link:hover {
+    text-decoration: none;
+}
+
+.add-item {
+    background-color: #f0f2f5;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar-item img {
+    width: 30px;
+    height: 30px;
+}
+
+.nav-item span {
+    font-weight: 500;
+    color: #050505;
+    font-size: medium;
+    margin: 0 0 0 10px;
+}
+
+.navbar-scroll {
+    height: 100%;
+    overflow: hidden;
+}
+
+.navbar-scroll:hover {
+    position: relative;
+    overflow-y: scroll;
+}
+
+.navbar-scroll::-webkit-scrollbar {
+    width: 8px;
+}
+
+
+/* Track */
+
+.navbar-scroll::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+
+/* Handle */
+
+.navbar-scroll::-webkit-scrollbar-thumb {
+    background: rgb(201, 201, 201);
+    border-radius: 20px;
+}
+
+
+/* Handle on hover */
+
+.navbar-scroll::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.main-content {
+    padding: 0 40px 0 40px;
+}
+
+.slide {
+    height: 30vh;
+}
+
+.slide>.col-md-12 {
+    height: 100%;
+}
+
+.carousel,
+.carousel-inner {
+    height: 100%;
+}
+
+.main {
+    margin: 0 auto;
+}
+
+.input-status {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    width: 80%;
+}
+
+.input-status>.img-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+}
+
+.input-status {
+    width: 70%;
+    background-color: #f0f2f5;
+    border-radius: 50px;
+    height: 40px;
+    border: aliceblue;
+    padding: 12px;
+    margin: 0 0 0 21px;
+}
+
+.main-right {
+    padding: 0 50px 0 20px;
+}
+
+.ads {
+    display: flex;
+    padding: 10px 0 10px 0;
+}
+
+.custom-img {
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+}
+
+.title-img {
+    font-weight: 500;
+    padding: 10px 0 0 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.title-img p {
+    margin-bottom: 0;
+}
+
+.title-img a {
+    font-size: small;
+    color: #8b8d90;
+}
+
+.card-title {
+    font-weight: 500;
+    font-size: medium;
+}
+
+.card-text {
+    font-size: small;
+}
+
+.confirm {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-confirm {
+    width: 49%;
+}
+
+.add-friend-confirm {
+    background-color: #f0f2f5;
+    border: none;
+    margin-bottom: 20px;
+}
+
+.add-friend-confirm .card-body {
+    padding: 0;
+    display: flex;
+}
+
+.img-user {
+    width: 20%;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.user {
+    width: 80%;
+    margin-left: 10px;
+}
+
+.birthday {
+    display: flex;
+    justify-content: space-between;
+}
+
+.notification {
+    padding: 0 0 0 10px;
+}
+
+.main-right {
+    height: 100%;
+    overflow: scroll;
+}
+
+.friends {
+    display: flex;
+    justify-content: space-between;
+}
+
+.list-icon {
+    display: flex;
+    justify-content: space-around;
+    margin: 10px 0 0 0;
+    list-style: none;
+}
+
+.list-icon i {
+    color: #8b8d90;
+}
+
+.add-status {
+    margin-bottom: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.img-position {
+    width: 10%;
+}
+
+.status {
+    width: 90%;
+    padding: 0 10px 0 0;
+}
+
+.input-status {
+    width: 100%;
+    background-color: #f0f2f5;
+    border-radius: 50px;
+    height: 40px;
+    border: aliceblue;
+    padding: 12px;
+    font-family: Arial, FontAwesome
+}
+
+.option {
+    margin-top: 20px;
+}
+
+.option-status-video,
+.option-status-image,
+.option-status-activities {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.option-status-video p,
+.option-status-image p,
+.option-status-activities p {
+    margin-bottom: 0;
+}
+
+.option-status-video i {
+    color: red;
+    padding-right: 5px;
+}
+
+.option-status-image i {
+    color: green;
+    padding-right: 5px;
+}
+
+.option-status-activities i {
+    color: yellow;
+    padding-right: 5px;
+}
+
+.option-status p {
+    color: #8b8d90;
+    font-size: medium;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+
+.main .img-avatar {
+    float: right;
+    width: 40px;
+    height: 40px;
+}
+
+.main {
+    padding: 0 10px 0 10px;
+    margin: 15px;
+}
+
+.main .card {
+    border-radius: 10px;
+}
+
+.main-content {
+    height: 100%;
+    overflow: scroll;
+}
+
+.main-content::-webkit-scrollbar {
+    display: none;
+}
+
+.user-name {
+    width: 90%;
+    padding: 0 10px 0 10px;
+}
+
+.user-name p {
+    margin-bottom: 0px;
+}
+
+.user-name span {
+    font-size: small;
+}
+
+.your-friend {
+    font-weight: 500;
+    font-size: medium;
+}
+
+.caption {
+    margin-bottom: 0;
+}
+
+.like-comment {
+    margin: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.action-main {
+    margin: 10px;
+}
+
+.action {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.action i {
+    margin-right: 10px;
+}
+
+.card-body-status {
+    padding-bottom: 0;
+}
+
+
+/* hover */
+
+.header-icon li:hover {
+    background-color: #f0f2f5;
+    border-radius: 5px;
+}
+
+.navbar-item li:hover {
+    background-color: #e5e7eb;
+    border-radius: 5px;
+}
+
+.icon-right:hover {
+    background-color: #e5e7eb;
+    border-radius: 50%;
+}
