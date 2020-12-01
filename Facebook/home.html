@@ -44,6 +44,17 @@
                             </li>
                         </ul>
                     </nav>
+                    <script>
+                        let header = document.getElementById("icon-active");
+                        let btns = header.getElementsByClassName("nav-item");
+                        for (let i = 0; i < btns.length; i++) {
+                            btns[i].addEventListener("click", function() {
+                                var current = document.getElementsByClassName("active");
+                                current[0].className = current[0].className.replace(" active", "");
+                                this.className += " active";
+                            });
+                        }
+                    </script>
                 </div>
                 <div class="col-md-3 header-right">
                     <ul class="header-right-child" id="icon-right-active">
@@ -51,7 +62,7 @@
                                 alt="" />
                             <span>An</span></li>
                         <li>
-                            <a class="icon-right active-a" href="#">
+                            <a class="icon-right" href="#">
                                 <i class="fas fa-plus"></i>
                             </a>
                         </li>
@@ -71,11 +82,23 @@
                             </a>
                         </li>
                     </ul>
-
-
-
-
-
+                    <script>
+                        let isFirst = true;
+                        let iconright = document.getElementById("icon-right-active");
+                        let button = iconright.getElementsByClassName("icon-right");
+                        for (let i = 0; i < button.length; i++) {
+                            button[i].addEventListener("click", function() {
+                                if (isFirst) {
+                                    this.className += " active-a";
+                                    isFirst = false
+                                } else {
+                                    let current_a = document.getElementsByClassName("active-a");
+                                    current_a[0].className = current_a[0].className.replace(" active-a", "");
+                                    this.className += " active-a";
+                                }
+                            });
+                        }
+                    </script>
                 </div>
             </div>
         </header>
@@ -501,30 +524,7 @@
         </div>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <script>
-        // $('.nav-header').click(function(ev) {
-        //     $('.nav-header.active').removeClass('active');
-        //     $(this).addClass('active')
-        // })
-        let header = document.getElementById("icon-active");
-        let btns = header.getElementsByClassName("nav-item");
-        for (let i = 0; i < btns.length; i++) {
-            btns[i].addEventListener("click", function() {
-                var current = document.getElementsByClassName("active");
-                current[0].className = current[0].className.replace(" active", "");
-                this.className += " active";
-            });
-        }
-        let iconright = document.getElementById("icon-right-active");
-        let button = iconright.getElementsByClassName("icon-right");
-        for (let i = 0; i < button.length; i++) {
-            button[i].addEventListener("click", function() {
-                var current2 = document.getElementsByClassName("active-a");
-                current2[0].className = current2[0].className.replace(" active-a", "");
-                this.className += " active-a";
-            });
-        }
-    </script>
+
 </body>
 
 
