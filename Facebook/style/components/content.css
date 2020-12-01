@@ -147,10 +147,13 @@
         margin: 0 0 0 21px;
     }
     
+    .main-right {
+        padding: 0 40px 0 10px;
+    }
+    
     .ads {
         display: flex;
         padding: 10px 0 10px 0;
-        margin: 0 0 0 0;
     }
     
     .custom-img {
@@ -161,7 +164,7 @@
     
     .title-img {
         font-weight: 500;
-        /* padding: 10px 0 0 10px; */
+        padding: 10px 0 0 10px;
         display: flex;
         flex-direction: column;
     }
@@ -224,19 +227,14 @@
         padding: 0 0 0 10px;
     }
     
-    .main-right-main {
-        width: 100%;
-    }
-    
     .main-right {
         height: 100%;
-        overflow-y: hidden;
-    }
-    
-    .main-right:hover {
-        position: relative;
         overflow-y: scroll;
     }
+    /* .main-right:hover {
+        position: relative;
+        overflow-y: scroll;
+    } */
     
     .main-right::-webkit-scrollbar {
         width: 8px;
@@ -255,7 +253,7 @@
     /* Handle on hover */
     
     .main-right::-webkit-scrollbar-thumb:hover {
-        background: black;
+        background: #555;
     }
     
     .friends {
