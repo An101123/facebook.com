@@ -46,24 +46,36 @@
                     </nav>
                 </div>
                 <div class="col-md-3 header-right">
-                    <div class="avatar">
-                        <img class="img-avatar" src="https://scontent.fdad5-1.fna.fbcdn.net/v/t1.0-1/cp0/p50x50/118226750_1735345419968122_3445279649404067757_n.jpg?_nc_cat=101&ccb=2&_nc_sid=7206a8&_nc_ohc=5G6HH8GEruMAX-LhzYo&_nc_ht=scontent.fdad5-1.fna&tp=27&oh=74eeba8ac9d2902a957d6bb602948534&oe=5FE06651"
-                            alt="" />
-                        <span>An</span>
-                    </div>
-                    <a class="icon-right" href="">
-                        <i class="fas fa-plus"></i>
-                    </a>
-                    <a class="icon-right" href="">
-                        <i class="fab fa-facebook-messenger"></i>
-                    </a>
-                    <a class="icon-right" href="">
-                        <i class="fas fa-bell"></i>
-                    </a>
+                    <ul class="header-right-child" id="icon-right-active">
+                        <li><img class="img-avatar" src="https://scontent.fdad5-1.fna.fbcdn.net/v/t1.0-1/cp0/p50x50/118226750_1735345419968122_3445279649404067757_n.jpg?_nc_cat=101&ccb=2&_nc_sid=7206a8&_nc_ohc=5G6HH8GEruMAX-LhzYo&_nc_ht=scontent.fdad5-1.fna&tp=27&oh=74eeba8ac9d2902a957d6bb602948534&oe=5FE06651"
+                                alt="" />
+                            <span>An</span></li>
+                        <li>
+                            <a class="icon-right active-a" href="#">
+                                <i class="fas fa-plus"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="icon-right" href="#">
+                                <i class="fab fa-facebook-messenger"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="icon-right" href="#">
+                                <i class="fas fa-bell"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="icon-right" href="#">
+                                <i class="fas fa-caret-down"></i>
+                            </a>
+                        </li>
+                    </ul>
 
-                    <a class="icon-right" href="">
-                        <i class="fas fa-caret-down"></i>
-                    </a>
+
+
+
+
                 </div>
             </div>
         </header>
@@ -494,15 +506,23 @@
         //     $('.nav-header.active').removeClass('active');
         //     $(this).addClass('active')
         // })
-        var header = document.getElementById("icon-active");
-        var btns = header.getElementsByClassName("nav-item");
-        for (var i = 0; i < btns.length; i++) {
+        let header = document.getElementById("icon-active");
+        let btns = header.getElementsByClassName("nav-item");
+        for (let i = 0; i < btns.length; i++) {
             btns[i].addEventListener("click", function() {
                 var current = document.getElementsByClassName("active");
                 current[0].className = current[0].className.replace(" active", "");
                 this.className += " active";
             });
-
+        }
+        let iconright = document.getElementById("icon-right-active");
+        let button = iconright.getElementsByClassName("icon-right");
+        for (let i = 0; i < button.length; i++) {
+            button[i].addEventListener("click", function() {
+                var current2 = document.getElementsByClassName("active-a");
+                current2[0].className = current2[0].className.replace(" active-a", "");
+                this.className += " active-a";
+            });
         }
     </script>
 </body>
