@@ -17,7 +17,8 @@
     border: aliceblue;
     padding: 12px;
     margin: 0 0 0 21px;
-    font-family: Arial, FontAwesome
+    font-family: Arial, FontAwesome;
+    outline: none;
 }
 
 .header-icon {
@@ -47,7 +48,7 @@
 .header-right {
     display: flex;
     justify-content: space-around;
-    padding: 10px 26px 0 0;
+    padding: 10px 26px 0 30px;
 }
 
 .icon-right {
@@ -58,4 +59,35 @@
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.icon-right {
+    color: black;
+    text-decoration: none;
+}
+
+.header-icon li:hover {
+    background-color: #f0f2f5;
+    border-radius: 5px;
+}
+
+.nav-item:hover {
+    background-color: #e5e7eb;
+    border-radius: 5px;
+}
+
+.active {
+    border-bottom: 2px solid blue;
+}
+
+.header-icon .active:hover {
+    background-color: #fff;
+    border-radius: 0px;
+}
+
+.icon-right:hover {
+    background-color: #e5e7eb;
+    color: black;
+    border-radius: 50%;
+    text-decoration: none;
 }
